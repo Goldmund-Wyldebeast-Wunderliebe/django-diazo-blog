@@ -1,4 +1,5 @@
 django
+south
 django-diazo
 git+git://github.com/Goldmund-Wyldebeast-Wunderliebe/django-diazo-themes.git
 

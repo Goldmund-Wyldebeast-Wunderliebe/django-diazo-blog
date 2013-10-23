@@ -19,7 +19,8 @@ Install Django
 
 Configure Django
 
-    python manage.py syncdb
+    python manage.py syncdb --all
+    python manage.py migrate --fake
     python manage.py collectstatic
     python manage.py syncthemes
 
