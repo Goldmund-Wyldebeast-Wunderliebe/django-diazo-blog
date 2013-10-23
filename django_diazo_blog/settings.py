@@ -131,6 +131,7 @@ INSTALLED_APPS = (
     'south',
     'django_diazo',
     'django_diazo_themes.ministerial',
+    'django_diazo_themes.angled_theme',
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
