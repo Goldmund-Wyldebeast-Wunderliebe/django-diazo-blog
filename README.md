@@ -21,7 +21,7 @@ Configure Django
 
     python manage.py syncdb --all
     python manage.py migrate --fake
-    python manage.py collectstatic
+    python manage.py collectstatic --link
     python manage.py syncthemes
 
     python manage.py runserver
