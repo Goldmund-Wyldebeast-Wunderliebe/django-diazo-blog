@@ -5,4 +5,9 @@ static
 .idea
 *.pyc
 db.sqlite3
-
+*.py~
+*.sh~
+.gitignore~
+logs/
+media/
+local_settings.py

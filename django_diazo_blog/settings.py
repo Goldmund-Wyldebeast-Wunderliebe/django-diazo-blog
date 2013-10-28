@@ -4,7 +4,7 @@ import os
 PROJECT_DIR = os.path.dirname(__file__)
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
-DEBUG = True
+DEBUG = not True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -132,6 +132,7 @@ INSTALLED_APPS = (
     'django_diazo',
     'django_diazo_themes.ministerial',
     'django_diazo_themes.angled_theme',
+    'diazo_blog', # For testing
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
@@ -164,3 +165,11 @@ LOGGING = {
         },
     }
 }
+
+LIVE_SERVER_URL = ''
+
+try:
+    from local_settings import *
+except ImportError:
+    pass
+
